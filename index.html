@@ -1,0 +1,80 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trivia Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    </head>
+    <body>
+        
+        <div class = "container">
+            <div class = "jumbotron titleBox">
+                <h1>Totally Trivial Trivia!</h1>
+                <br>
+                <div class = "timer">
+                    <button class = "btn startButton">Start</button>
+                    <h2 id="timeLeft">Time Left: 60 Seconds</h2>
+                    <h2 id="done"></h2>
+
+                </div>
+
+            </div>
+
+            <section>
+            <div class = "jumbotron questionsBox">
+                
+                <form name = "quiz" class="questions" onsubmit = "return submitAnswers()">
+                    <h2 class = "question q1">Question 1 Goes Here</h2>
+                    <label class="radio-inline"><input type="radio" name="q1" id="q1a" value="a">Option 1</label>
+                    <label class="radio-inline"><input type="radio" name="q1" id="q1b" value="b">Option 2</label>
+                    <label class="radio-inline"><input type="radio" name="q1" id="q1c" value="c">Option 3</label>
+                    <label class="radio-inline"><input type="radio" name="q1" id="q1d" value="d">Option 4</label>
+                    <br><br>
+
+
+                    <h2 class = "question q2">Question 2 Goes Here</h2>
+                    <label class="radio-inline"><input type="radio" name="q2" id="q2a" value="a">Option 1</label>
+                    <label class="radio-inline"><input type="radio" name="q2" id="q2b" value="b">Option 2</label>
+                    <label class="radio-inline"><input type="radio" name="q2" id="q2c" value="c">Option 3</label>
+                    <label class="radio-inline"><input type="radio" name="q2" id="q2d" value="d">Option 4</label>
+                    <br><br>
+
+
+                    <h2 class = "question q3">Question 3 Goes Here</h2>
+                    <label class="radio-inline"><input type="radio" name="q3" id="q3a" value="a">Option 1</label>
+                    <label class="radio-inline"><input type="radio" name="q3" id="q3b" value="b">Option 2</label>
+                    <label class="radio-inline"><input type="radio" name="q3" id="q3c" value="c">Option 3</label>
+                    <label class="radio-inline"><input type="radio" name="q3" id="q3d" value="d">Option 4</label>
+
+
+                    <br><br><br>
+                    <input type ="submit" class="submitButton" value="Submit Answers">
+                </form>
+
+                <div class ="scoreBoard">
+                    <h3 id ="correct">Correct Answers: 0</h3>
+                    <h3 id ="wrong">Wrong Answers: 0</h3>
+                    <h3 id ="unanswered">Unanswerd: 0</h3>
+                </div>
+
+            </div>
+            </section>
+
+
+
+            
+        </div>
+        
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script rel="script" type-"text/javascript" src="assets/javascript/app.js"></script>
+    
+    </body>
+
+</html>

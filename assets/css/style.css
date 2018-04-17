@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("../images/bg.png");
+}
+.jumbotron{
+    background: silver;
+    border: 2px solid darkgrey;
+
+}
+
+.section{
+    border: 2px solid orange;
+
+}
+
+.startButton{
+    height: 100px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 2px solid orange;
+    background-color: peachpuff;
+    font-size: 36px;
+}
+
+.container{
+    max-width: 960px;
+    text-align: center;
+
+}
+
+.radio-inline{
+    font-size: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
