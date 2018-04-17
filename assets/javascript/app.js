@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.questionsBox').hide();
     $('#timeLeft').hide();
     $('.scoreBoard').hide();
-
+    // $('.restart').hide();
 
 });
 
@@ -20,7 +20,7 @@ $('.startButton').click(function(){
 });
 
 var timeOn = false;
-var time = 5;
+var time = 60;
 
 function startTimer(){
     timeOn = true;
@@ -40,7 +40,7 @@ function startTimer(){
     }
 }
 
-var total = 3;
+var total = 8;
 var score = 0;
 var wrong = 0;
 var unanswered = 0;
@@ -54,12 +54,18 @@ function submitAnswers(){
     var q1 = document.forms['quiz']['q1'].value;
     var q2 = document.forms['quiz']['q2'].value;
     var q3 = document.forms['quiz']['q3'].value;
-    // var q4 = document.forms['quiz']['q4'].value;
-    // var q5 = document.forms['quiz']['q5'].value;
+    var q4 = document.forms['quiz']['q4'].value;
+    var q5 = document.forms['quiz']['q5'].value;
+    var q6 = document.forms['quiz']['q6'].value;
+    var q7 = document.forms['quiz']['q7'].value;
+    var q8 = document.forms['quiz']['q8'].value;
+    // var q9 = document.forms['quiz']['q9'].value;
+    // var q10 = document.forms['quiz']['q10'].value;
+
 
 
     //Set Correct Answers
-    var answers = ['a','b','c','d','d'];
+    var answers = ['a','c','c','d','b','c','b','c'];
 
     // Check Answers
     for (j = 1; j <= total; j++){
@@ -86,6 +92,10 @@ $('.submitButton').click(function(){
     swap();
 });
 
+$('.restart').click(function(){
+    location.reload();   
+});
+
 function swap(){
     $('.questions').hide();
     $('.scoreBoard').show();
@@ -95,4 +105,5 @@ function swap(){
     $('#correct').html("Correct Answers: " + score);
     $('#wrong').html("Wrong Answers: " + wrong);
     $('#unanswered').html("Unanswerd: " + unanswered);
+    // $('.restart').show();
 }

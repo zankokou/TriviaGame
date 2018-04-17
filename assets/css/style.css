@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+#timeLeft{
+    position: fixed;
+    width: 175px;
+    height: auto;
+    background: lightblue;
+    border: 2px solid darkblue;
+    margin-left: 680px;
+    margin-top: -50px;
+    font-weight: bolder;
+}
 
 body{
     background-image: url("../images/bg.png");
@@ -37,4 +47,13 @@ body{
     font-size: 16px;
     margin-left: 12px;
     margin-right: 12px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    #timeLeft{
+        font-size: 14px;
+        width: 100px;
+        margin-left: 55%;
+    }
 }
