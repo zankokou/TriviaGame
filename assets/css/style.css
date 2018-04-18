@@ -6,18 +6,27 @@
     position: fixed;
     width: 175px;
     height: auto;
-    background: lightblue;
-    border: 2px solid darkblue;
+    background: black;
+    border: 2px solid silver;
     margin-left: 680px;
     margin-top: -50px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 body{
     background-image: url("../images/bg.png");
 }
+
+.titleBox{
+    background-image: url("../images/box.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: lightblue;
+    font-weight: bolder;
+
+}
 .jumbotron{
-    background: silver;
+
     border: 2px solid darkgrey;
 
 }
@@ -32,8 +41,8 @@ body{
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    border: 2px solid orange;
-    background-color: peachpuff;
+    border: 2px solid darkgreen;
+    background-color: green;
     font-size: 36px;
 }
 
