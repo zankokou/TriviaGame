@@ -1,16 +1,20 @@
 
+var audSanctuary = document.getElementById("sanctuaryAud");
+audSanctuary.volume = 0.2;
+
+
 $(document).ready(function(){
     $('.questionsBox').hide();
     $('#timeLeft').hide();
     $('.scoreBoard').hide();
     // $('.restart').hide();
-
 });
 
 $('.startButton').click(function(){
     $('.questionsBox').show();
     $('.startButton').hide();
     $('#timeLeft').show();
+    audSanctuary.play();
 
     startTimer();
 
